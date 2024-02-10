@@ -1,0 +1,6 @@
+[submodule "wecom-gpt"]
+	path = wecom-gpt
+	url = https://github.com/wandering-ai/wecom-gpt.git
+[submodule "wecom-crypto"]
+	path = wecom-crypto
+	url = https://github.com/wandering-ai/wecom-crypto.git

@@ -1,0 +1,3 @@
+[workspace]
+members = ["wecom-gpt", "wecom-crypto"]
+resolver = "2"
