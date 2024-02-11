@@ -1030,6 +1030,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "wecom-crypto"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5e9f1e99661cb76733a70a7239dee88bca5cb91765b63146307677e14352d7ce"
+dependencies = [
+ "aes",
+ "base16ct",
+ "base64",
+ "cbc",
+ "rand",
+ "sha1",
+]
+
+[[package]]
 name = "wecom-gpt"
 version = "0.1.0"
 dependencies = [
@@ -1046,7 +1060,7 @@ dependencies = [
  "tower-http",
  "tracing",
  "tracing-subscriber",
- "wecom-crypto",
+ "wecom-crypto 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
