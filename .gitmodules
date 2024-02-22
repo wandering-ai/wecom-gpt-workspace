@@ -4,3 +4,6 @@
 [submodule "wecom-crypto"]
 	path = wecom-crypto
 	url = https://github.com/wandering-ai/wecom-crypto.git
+[submodule "wecom-agent"]
+	path = wecom-agent
+	url = https://github.com/wandering-ai/wecom-agent.git
