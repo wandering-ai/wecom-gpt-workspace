@@ -1082,9 +1082,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.113"
+version = "1.0.114"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "69801b70b1c3dac963ecb03a364ba0ceda9cf60c71cfe475e99864759c8b8a79"
+checksum = "c5f09b1bd632ef549eaa9f60a1f8de742bdbc698e6cee2095fc84dde5f549ae0"
 dependencies = [
  "itoa",
  "ryu",
@@ -1574,15 +1574,41 @@ dependencies = [
 
 [[package]]
 name = "wecom-agent"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "reqwest",
  "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "wecom-agent"
+version = "0.1.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6195225ec04a859d2b62b35574677841aa11a2915a1c0de711065b0ea815205d"
+dependencies = [
+ "reqwest",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
 name = "wecom-crypto"
 version = "0.1.6"
+dependencies = [
+ "aes",
+ "base16ct",
+ "base64",
+ "cbc",
+ "rand",
+ "sha1",
+]
+
+[[package]]
+name = "wecom-crypto"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c9912227a4e7ef19bf0f9d1b4e93f74d57da765e098bc1dd76559f1380be2536"
 dependencies = [
  "aes",
  "base16ct",
@@ -1611,8 +1637,8 @@ dependencies = [
  "tower-http",
  "tracing",
  "tracing-subscriber",
- "wecom-agent",
- "wecom-crypto",
+ "wecom-agent 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wecom-crypto 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
