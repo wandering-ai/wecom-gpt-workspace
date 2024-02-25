@@ -1464,6 +1464,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "uuid"
+version = "1.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f00cc9702ca12d3c81455259621e676d0f7251cec66a21e98fe2e9a37db93b2a"
+dependencies = [
+ "getrandom",
+]
+
+[[package]]
 name = "valuable"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1575,6 +1584,8 @@ dependencies = [
 [[package]]
 name = "wecom-agent"
 version = "0.1.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6195225ec04a859d2b62b35574677841aa11a2915a1c0de711065b0ea815205d"
 dependencies = [
  "reqwest",
  "serde",
@@ -1583,13 +1594,12 @@ dependencies = [
 
 [[package]]
 name = "wecom-agent"
-version = "0.1.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6195225ec04a859d2b62b35574677841aa11a2915a1c0de711065b0ea815205d"
+version = "0.1.9"
 dependencies = [
  "reqwest",
  "serde",
  "serde_json",
+ "tokio",
 ]
 
 [[package]]
@@ -1629,6 +1639,7 @@ dependencies = [
  "cbc",
  "envy",
  "rand",
+ "reqwest",
  "serde",
  "serde-xml-rs",
  "sha1",
@@ -1637,7 +1648,8 @@ dependencies = [
  "tower-http",
  "tracing",
  "tracing-subscriber",
- "wecom-agent 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "uuid",
+ "wecom-agent 0.1.8",
  "wecom-crypto 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
