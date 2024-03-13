@@ -7,3 +7,6 @@
 [submodule "wecom-agent"]
 	path = wecom-agent
 	url = https://github.com/wandering-ai/wecom-agent.git
+[submodule "zoo"]
+	path = zoo
+	url = https://github.com/wandering-ai/zoo.git
