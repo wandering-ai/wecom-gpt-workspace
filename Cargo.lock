@@ -365,15 +365,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "envy"
-version = "0.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3f47e0157f2cb54f5ae1bd371b30a2ae4311e1c028f575cd4e81de7353215965"
-dependencies = [
- "serde",
-]
-
-[[package]]
 name = "equivalent"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1816,15 +1807,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "uuid"
-version = "1.7.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f00cc9702ca12d3c81455259621e676d0f7251cec66a21e98fe2e9a37db93b2a"
-dependencies = [
- "getrandom",
-]
-
-[[package]]
 name = "valuable"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1985,7 +1967,7 @@ dependencies = [
 
 [[package]]
 name = "wecom-gpt"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "axum",
  "chrono",
@@ -2001,38 +1983,6 @@ dependencies = [
  "tower",
  "tower-http",
  "tracing",
- "wecom-agent 0.1.14",
- "wecom-crypto 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "wecom-gpt"
-version = "0.1.1"
-source = "git+https://github.com/wandering-ai/wecom-gpt.git#80cfb2f9350171ae19cb9f26e8a7255c9665d361"
-dependencies = [
- "aes",
- "axum",
- "base16ct",
- "base64",
- "cbc",
- "chrono",
- "diesel",
- "diesel_migrations",
- "envy",
- "libsqlite3-sys",
- "r2d2",
- "rand",
- "reqwest",
- "serde",
- "serde-xml-rs",
- "sha1",
- "tokio",
- "tower",
- "tower-http",
- "tracing",
- "tracing-appender",
- "tracing-subscriber",
- "uuid",
  "wecom-agent 0.1.14",
  "wecom-crypto 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -2227,7 +2177,7 @@ checksum = "0fcb9cbac069e033553e8bb871be2fbdffcab578eb25bd0f7c508cedc6dcd75a"
 
 [[package]]
 name = "zoo"
-version = "0.1.0"
+version = "0.2.1"
 dependencies = [
  "axum",
  "exitcode",
@@ -2236,5 +2186,5 @@ dependencies = [
  "tracing",
  "tracing-appender",
  "tracing-subscriber",
- "wecom-gpt 0.1.1 (git+https://github.com/wandering-ai/wecom-gpt.git)",
+ "wecom-gpt",
 ]
