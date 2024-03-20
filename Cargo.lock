@@ -825,7 +825,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0f23f71580015254b020e856feac3df5878c2c7a8812297edd6c0a485ac9dada"
 dependencies = [
  "serde",
- "toml",
+ "toml 0.7.8",
 ]
 
 [[package]]
@@ -1618,7 +1618,19 @@ dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
- "toml_edit",
+ "toml_edit 0.19.15",
+]
+
+[[package]]
+name = "toml"
+version = "0.8.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e9dd1545e8208b4a5af1aa9bbd0b4cf7e9ea08fabc5d0a5c67fcaafa17433aa3"
+dependencies = [
+ "serde",
+ "serde_spanned",
+ "toml_datetime",
+ "toml_edit 0.22.8",
 ]
 
 [[package]]
@@ -1640,7 +1652,20 @@ dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
- "winnow",
+ "winnow 0.5.40",
+]
+
+[[package]]
+name = "toml_edit"
+version = "0.22.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c12219811e0c1ba077867254e5ad62ee2c9c190b0d957110750ac0cda1ae96cd"
+dependencies = [
+ "indexmap",
+ "serde",
+ "serde_spanned",
+ "toml_datetime",
+ "winnow 0.6.5",
 ]
 
 [[package]]
@@ -1941,7 +1966,7 @@ dependencies = [
 
 [[package]]
 name = "wecom-crypto"
-version = "0.1.6"
+version = "0.1.7"
 dependencies = [
  "aes",
  "base16ct",
@@ -1953,9 +1978,9 @@ dependencies = [
 
 [[package]]
 name = "wecom-crypto"
-version = "0.1.6"
+version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c9912227a4e7ef19bf0f9d1b4e93f74d57da765e098bc1dd76559f1380be2536"
+checksum = "c0422fb1c52f401cd56431e7ef670bcc722be7fc1299f1b494da9cdc24ee642f"
 dependencies = [
  "aes",
  "base16ct",
@@ -1967,7 +1992,7 @@ dependencies = [
 
 [[package]]
 name = "wecom-gpt"
-version = "0.1.2"
+version = "0.2.0"
 dependencies = [
  "axum",
  "chrono",
@@ -1984,7 +2009,7 @@ dependencies = [
  "tower-http",
  "tracing",
  "wecom-agent 0.1.14",
- "wecom-crypto 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wecom-crypto 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2160,6 +2185,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "winnow"
+version = "0.6.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dffa400e67ed5a4dd237983829e66475f0a4a26938c4b04c21baede6262215b8"
+dependencies = [
+ "memchr",
+]
+
+[[package]]
 name = "winreg"
 version = "0.50.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2177,12 +2211,13 @@ checksum = "0fcb9cbac069e033553e8bb871be2fbdffcab578eb25bd0f7c508cedc6dcd75a"
 
 [[package]]
 name = "zoo"
-version = "0.2.1"
+version = "0.3.0"
 dependencies = [
  "axum",
  "exitcode",
  "serde",
  "tokio",
+ "toml 0.8.12",
  "tracing",
  "tracing-appender",
  "tracing-subscriber",
