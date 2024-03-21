@@ -1966,7 +1966,7 @@ dependencies = [
 
 [[package]]
 name = "wecom-crypto"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "aes",
  "base16ct",
@@ -1978,9 +1978,9 @@ dependencies = [
 
 [[package]]
 name = "wecom-crypto"
-version = "0.1.7"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c0422fb1c52f401cd56431e7ef670bcc722be7fc1299f1b494da9cdc24ee642f"
+checksum = "1bbee2c653e1a7ea86266fcd16cf2c106ea6190578d71796cbaac064a0585ce8"
 dependencies = [
  "aes",
  "base16ct",
@@ -2009,7 +2009,7 @@ dependencies = [
  "tower-http",
  "tracing",
  "wecom-agent 0.1.16 (registry+https://github.com/rust-lang/crates.io-index)",
- "wecom-crypto 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wecom-crypto 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
