@@ -1942,9 +1942,7 @@ dependencies = [
 
 [[package]]
 name = "wecom-agent"
-version = "0.1.14"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "abfde3183e76351947d5699f5e1a8d57aba62d7f208bbc8e2163502f14862444"
+version = "0.1.16"
 dependencies = [
  "log",
  "reqwest",
@@ -1955,7 +1953,9 @@ dependencies = [
 
 [[package]]
 name = "wecom-agent"
-version = "0.1.15"
+version = "0.1.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3724e20b4a5f4f8f4917395194e74cd11f3c338fbea12d531c7b2122c8684541"
 dependencies = [
  "log",
  "reqwest",
@@ -1992,7 +1992,7 @@ dependencies = [
 
 [[package]]
 name = "wecom-gpt"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "axum",
  "chrono",
@@ -2008,7 +2008,7 @@ dependencies = [
  "tower",
  "tower-http",
  "tracing",
- "wecom-agent 0.1.14",
+ "wecom-agent 0.1.16 (registry+https://github.com/rust-lang/crates.io-index)",
  "wecom-crypto 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -2211,7 +2211,7 @@ checksum = "0fcb9cbac069e033553e8bb871be2fbdffcab578eb25bd0f7c508cedc6dcd75a"
 
 [[package]]
 name = "zoo"
-version = "0.3.0"
+version = "0.3.4"
 dependencies = [
  "axum",
  "exitcode",
